@@ -17,10 +17,10 @@ Recursion
 
 Take a look at the quasi-quicksort implementation in [quasi-quicksort.hs](./quasi-quicksort.hs).It's easier to read than pseudo-code! Also take a look as to why this isn't really a true [quicksort implementation](http://www.haskell.org/haskellwiki/Introduction#Quicksort_in_Haskell).
 
-Defining our own types(http://www.haskell.org/haskellwiki/Algebraic_data_type)
+Defining our own types
 ---------------------------------------
 
-In Haskell we can use the data keyword to define our own data-types:
+In Haskell we can use the data keyword to [define our own data-types](http://www.haskell.org/haskellwiki/Algebraic_data_type):
 
 ```Haskell
 data OneOrInterval = 
