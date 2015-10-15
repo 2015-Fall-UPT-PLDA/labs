@@ -1,6 +1,6 @@
 quasiQuicksort :: (Ord a) => [a] -> [a]
 quasiQuicksort [] = []
-quasiQuicksort (head:tail) = smaller ++ [pivot] ++ larger
+quasiQuicksort (head:tail) = sortedSmaller ++ [pivot] ++ sortedLargerOrEqual
                            where pivot = head
-                                 smaller = filter (< pivot) (quasiQuicksort tail)
-                                 larger = filter (> pivot) (quasiQuicksort tail)
+                                 sortedSmaller = quasiQuicksort $ filter (< pivot) tail
+                                 sortedLargerOrEqual = quasiQuicksort $ filter (>= pivot) tail
